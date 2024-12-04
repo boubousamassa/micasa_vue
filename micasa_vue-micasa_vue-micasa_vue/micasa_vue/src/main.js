@@ -9,6 +9,7 @@ import OffersPage from './components/offres.vue';
 import ContactPage from './components/contact.vue';
 import RoomDetail from './components/room_detail.vue';
 
+
 import './assets/css/plugins.css';
 import './assets/css/style.css';
 

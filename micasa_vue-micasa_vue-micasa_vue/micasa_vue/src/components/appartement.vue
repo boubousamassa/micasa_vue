@@ -1,4 +1,9 @@
 <template>
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -524,38 +529,90 @@
 
 <script>
 export default {
-    name: "AppartementPage",
-    data() {
-        return {
-            rooms: [
-                {
-                    id: 1,
-                    title: "Suite Junior",
-                    description: "Une expérience unique avec un hébergement confortable et des équipements modernes.",
-                    capacity: "1-2 Personnes",
-                    image: "@/assets/rooms/1.jpg",
-                },
-                {
-                    id: 2,
-                    title: "Chambre Familiale",
-                    description: "Profitez d'un séjour confortable pour toute la famille.",
-                    capacity: "1-4 Personnes",
-                    image: "@/assets/rooms/2.jpg",
-                },
-                {
-                    id: 3,
-                    title: "Chambre Deluxe",
-                    description: "Un confort supérieur pour un séjour mémorable.",
-                    capacity: "1-3 Personnes",
-                    image: "@/assets/rooms/3.jpg",
-                },
-                // Ajoute d'autres chambres ici
-            ],
-        };
-    },
+  name: "AppartementPage",
+  data() {
+    return {
+      rooms: [
+        {
+          id: 1,
+          title: "Suite Junior",
+          description: "Une expérience unique avec un hébergement confortable et des équipements modernes.",
+          capacity: "1-2 Personnes",
+          image: "@/assets/rooms/1.jpg",
+        },
+        {
+          id: 2,
+          title: "Chambre Familiale",
+          description: "Profitez d'un séjour confortable pour toute la famille.",
+          capacity: "1-4 Personnes",
+          image: "@/assets/rooms/2.jpg",
+        },
+        {
+          id: 3,
+          title: "Chambre Deluxe",
+          description: "Un confort supérieur pour un séjour mémorable.",
+          capacity: "1-3 Personnes",
+          image: "@/assets/rooms/3.jpg",
+        },
+        // Ajoute d'autres chambres ici
+      ],
+      loadedScripts: {} // Suivi des scripts chargés
+    };
+  },
+  methods: {
+    // Méthode pour recharger les scripts
+    reloadPageScripts() {
+      const scripts = [
+        '/assets/js/jquery-3.6.3.min.js',
+        '/assets/js/jquery-migrate-3.0.0.min.js',
+        '/assets/js/modernizr-2.6.2.min.js',
+        '/assets/js/imagesloaded.pkgd.min.js',
+        '/assets/js/jquery.isotope.v3.0.2.js',
+        '/assets/js/pace.js',
+        '/assets/js/popper.min.js',
+        '/assets/js/bootstrap.min.js',
+        '/assets/js/scrollIt.min.js',
+        '/assets/js/jquery.waypoints.min.js',
+        '/assets/js/owl.carousel.min.js',
+        '/assets/js/jquery.stellar.min.js',
+        '/assets/js/jquery.magnific-popup.js',
+        '/assets/js/YouTubePopUp.js',
+        '/assets/js/select2.js',
+        '/assets/js/datepicker.js',
+        '/assets/js/smooth-scroll.min.js',
+        '/assets/js/translation.js',
+        '/assets/js/custom.js'
+      ];
+
+      scripts.forEach(src => {
+        // Vérifier si le script est déjà chargé
+        if (!this.loadedScripts[src]) {
+          const script = document.createElement('script');
+          script.src = src;
+          script.async = true;
+          script.onload = () => {
+            this.loadedScripts[src] = true;
+            console.log(`${src} rechargé avec succès.`);
+          };
+          script.onerror = () => {
+            console.error(`Erreur lors du chargement de ${src}`);
+          };
+          document.body.appendChild(script); // Ajouter le script au DOM
+        } else {
+          console.log(`${src} est déjà chargé.`);
+        }
+      });
+    }
+  },
+  // Utiliser beforeRouteEnter pour recharger les scripts dès que la page change
+  beforeRouteEnter(to, from, next) {
+    next(vm => {
+      vm.reloadPageScripts(); // Appeler la méthode au changement de route
+    });
+  }
 };
 </script>
-
+    
 <style scoped>
 /* Copie ici les styles spécifiques pour cette page */
 .banner-header {

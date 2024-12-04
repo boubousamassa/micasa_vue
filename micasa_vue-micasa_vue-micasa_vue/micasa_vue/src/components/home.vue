@@ -1064,23 +1064,74 @@
 
 <script>
 export default {
-    name: "HomePage",
-    data() {
-        return {
-            booking: {
-                location: "",
-                arrival: "",
-                departure: "",
-                adults: "",
-            },
-        };
+  name: "HomePage",
+  data() {
+    return {
+      booking: {
+        location: "",
+        arrival: "",
+        departure: "",
+        adults: "",
+      },
+      loadedScripts: {} // Suivi des scripts chargés
+    };
+  },
+  methods: {
+    // Méthode de réservation existante
+    handleBooking() {
+      console.log("Réservation effectuée :", this.booking);
     },
-    methods: {
-        handleBooking() {
-            console.log("Réservation effectuée :", this.booking);
-        },
-    },
+
+    // Méthode pour recharger les scripts
+    reloadPageScripts() {
+      const scripts = [
+        '/assets/js/jquery-3.6.3.min.js',
+        '/assets/js/jquery-migrate-3.0.0.min.js',
+        '/assets/js/modernizr-2.6.2.min.js',
+        '/assets/js/imagesloaded.pkgd.min.js',
+        '/assets/js/jquery.isotope.v3.0.2.js',
+        '/assets/js/pace.js',
+        '/assets/js/popper.min.js',
+        '/assets/js/bootstrap.min.js',
+        '/assets/js/scrollIt.min.js',
+        '/assets/js/jquery.waypoints.min.js',
+        '/assets/js/owl.carousel.min.js',
+        '/assets/js/jquery.stellar.min.js',
+        '/assets/js/jquery.magnific-popup.js',
+        '/assets/js/YouTubePopUp.js',
+        '/assets/js/select2.js',
+        '/assets/js/datepicker.js',
+        '/assets/js/smooth-scroll.min.js',
+        '/assets/js/translation.js',
+        '/assets/js/custom.js'
+      ];
+
+      scripts.forEach(src => {
+        // Vérifier si le script est déjà chargé
+        if (!this.loadedScripts[src]) {
+          const script = document.createElement('script');
+          script.src = src;
+          script.async = true;
+          script.onload = () => {
+            this.loadedScripts[src] = true;
+            console.log(`${src} rechargé avec succès.`);
+          };
+          script.onerror = () => {
+            console.error(`Erreur lors du chargement de ${src}`);
+          };
+          document.body.appendChild(script); // Ajouter le script au DOM
+        } else {
+          console.log(`${src} est déjà chargé.`);
+        }
+      });
+    }
+  },
+  // Utiliser beforeRouteEnter pour recharger les scripts dès que la page change
+  beforeRouteEnter(to, from, next) {
+    next(vm => {
+      vm.reloadPageScripts(); // Appeler la méthode au changement de route
+    });
+  }
 };
 </script>
-
 
