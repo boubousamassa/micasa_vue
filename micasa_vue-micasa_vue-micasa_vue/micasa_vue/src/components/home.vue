@@ -1083,11 +1083,4 @@ export default {
 };
 </script>
 
-<style scoped>
-/* Ajoute ici le style pour la page d'accueil */
-.booking-wrapper {
-    background-color: #f8f9fa;
-    padding: 20px;
-    margin-top: 20px;
-}
-</style>
+
