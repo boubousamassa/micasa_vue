@@ -27,7 +27,7 @@
     </nav>
     <!-- Header Banner -->
     <div class="banner-header section-padding valign bg-img bg-fixed" data-overlay-dark="3"
-      data-background="img/slider/5.jpg">
+      data-background="../assets/img/slider/5.jpg">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-left caption mt-90">
@@ -37,6 +37,7 @@
         </div>
       </div>
     </div>
+    
     <!-- Contact -->
     <section class="contact section-padding">
       <div class="container">
@@ -189,14 +190,14 @@
               <div class="footer-column footer-explore clearfix">
                 <h3 class="footer-title">Explorez</h3>
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><router-link class="nav-link" to="/">Accueil</router-link></li>
-                    <li class="nav-item"><router-link class="nav-link" to="/appartement">Appartements</router-link>
-                    </li>
-                    <li class="nav-item"><router-link class="nav-link" to="/restaurant">Restaurant</router-link>
-                    </li>
-                    <li class="nav-item"><router-link class="nav-link" to="/offers">Offres</router-link></li>
-                    <li class="nav-item"><router-link class="nav-link" to="/about">À Propos</router-link></li>
-                    <li class="nav-item"><router-link class="nav-link" to="/contact">Contact</router-link></li>
+                  <li class="nav-item"><router-link class="nav-link" to="/">Accueil</router-link></li>
+                  <li class="nav-item"><router-link class="nav-link" to="/appartement">Appartements</router-link>
+                  </li>
+                  <li class="nav-item"><router-link class="nav-link" to="/restaurant">Restaurant</router-link>
+                  </li>
+                  <li class="nav-item"><router-link class="nav-link" to="/offers">Offres</router-link></li>
+                  <li class="nav-item"><router-link class="nav-link" to="/about">À Propos</router-link></li>
+                  <li class="nav-item"><router-link class="nav-link" to="/contact">Contact</router-link></li>
                 </ul>
               </div>
             </div>

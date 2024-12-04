@@ -26,7 +26,7 @@
     </nav>
     <!-- Header Banner -->
     <div class="banner-header section-padding valign bg-img bg-fixed" data-overlay-dark="4"
-        data-background="img/slider/3.jpg">
+        data-background="/assets/img/slider/3.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-right caption mt-90">
@@ -35,6 +35,7 @@
             </div>
         </div>
     </div>
+
     <!-- Rooms 3 -->
     <div class="rooms3 section-padding">
         <div class="container">
@@ -47,7 +48,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="square-flip">
-                        <div class="square bg-img" data-background="img/rooms/1.jpg">
+                        <div class="square bg-img" data-background="/assets/img/rooms/1.jpg">
                             <span class="category"><a href="/appartement">Réserver</a></span>
                             <div class="square-container d-flex align-items-end justify-content-end">
                                 <div class="box-title">
@@ -83,7 +84,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="square-flip">
-                        <div class="square bg-img" data-background="img/rooms/2.jpg">
+                        <div class="square bg-img" data-background="/assets/img/rooms/2.jpg">
                             <span class="category"><a href="/appartement">Réserver</a></span>
                             <div class="square-container d-flex align-items-end justify-content-end">
                                 <div class="box-title">
@@ -119,7 +120,7 @@
 
                 <div class="col-md-4">
                     <div class="square-flip">
-                        <div class="square bg-img" data-background="img/rooms/3.jpg">
+                        <div class="square bg-img" data-background="/assets/img/rooms/3.jpg">
                             <span class="category"><a href="/appartement">Réserver</a></span>
                             <div class="square-container d-flex align-items-end justify-content-end">
                                 <div class="box-title">
@@ -155,7 +156,7 @@
 
                 <div class="col-md-4">
                     <div class="square-flip">
-                        <div class="square bg-img" data-background="img/rooms/6.jpg">
+                        <div class="square bg-img" data-background="/assets/img/rooms/6.jpg">
                             <span class="category"><a href="/appartement">Réserver</a></span>
                             <div class="square-container d-flex align-items-end justify-content-end">
                                 <div class="box-title">
@@ -191,7 +192,7 @@
 
                 <div class="col-md-4">
                     <div class="square-flip">
-                        <div class="square bg-img" data-background="img/rooms/8.jpg">
+                        <div class="square bg-img" data-background="/assets/img/rooms/8.jpg">
                             <span class="category"><a href="/appartement">Réserver</a></span>
                             <div class="square-container d-flex align-items-end justify-content-end">
                                 <div class="box-title">
@@ -227,7 +228,7 @@
 
                 <div class="col-md-4">
                     <div class="square-flip">
-                        <div class="square bg-img" data-background="img/rooms/9.jpg">
+                        <div class="square bg-img" data-background="/assets/img/rooms/9.jpg">
                             <span class="category"><a href="/appartement">Réserver</a></span>
                             <div class="square-container d-flex align-items-end justify-content-end">
                                 <div class="box-title">

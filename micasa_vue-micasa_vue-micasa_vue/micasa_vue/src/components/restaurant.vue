@@ -30,7 +30,8 @@
         <header class="header slider">
             <div class="owl-carousel owl-theme">
                 <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
-                <div class="text-center item bg-img" :style="{ backgroundImage: 'url(' + backgroundImage + ')' }" data-overlay-dark="2">
+                <div class="text-center item bg-img" :style="{ backgroundImage: 'url(' + backgroundImage + ')' }"
+                    data-overlay-dark="2">
                     <div class="v-middle caption">
                         <div class="container">
                             <div class="row">
@@ -41,7 +42,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-center item bg-img" data-overlay-dark="2" data-background="img/restaurant/2.jpg">
+                <div class="text-center item bg-img" data-overlay-dark="2"
+                    data-background="/assets/img/restaurant/2.jpg">
                     <div class="v-middle caption">
                         <div class="container">
                             <div class="row">
@@ -52,7 +54,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-center item bg-img" data-overlay-dark="2" data-background="img/restaurant/3.jpg">
+                <div class="text-center item bg-img" data-overlay-dark="2"
+                    data-background="/assets/img/restaurant/3.jpg">
                     <div class="v-middle caption">
                         <div class="container">
                             <div class="row">
@@ -362,7 +365,7 @@
         </section>
         <!-- Testiominals -->
         <section class="testimonials">
-            <div class="background bg-img bg-fixed section-padding pb-0" data-background="img/slider/2.jpg"
+            <div class="background bg-img bg-fixed section-padding pb-0" data-background="/assets/img/slider/2.jpg"
                 data-overlay-dark="3">
                 <div class="container">
                     <div class="row">
@@ -375,13 +378,13 @@
                                 </div>
                                 <div class="owl-carousel owl-theme">
                                     <div class="item">
-                                        <span class="quote"><img src="img/quot.png" alt=""></span>
+                                        <span class="quote"><img src="/assets/img/quot.png" alt=""></span>
                                         <p id="testimonial_1">Hotel dapibus asue metus the nec feusiate eraten miss
                                             hendreri net ve ante the lemon sanleo nectan feugiat erat hendrerit necuis
                                             ve ante otel inilla duiman at finibus viverra neca the sene on satien the
                                             miss drana inc fermen norttito sit space, mus nellentesque habitan.</p>
                                         <div class="info">
-                                            <div class="author-img"><img src="img/team/4.jpg" alt=""></div>
+                                            <div class="author-img"><img src="/assets/img/team/4.jpg" alt=""></div>
                                             <div class="cont">
                                                 <span><i class="star-rating"></i><i class="star-rating"></i><i
                                                         class="star-rating"></i><i class="star-rating"></i><i
@@ -392,13 +395,13 @@
                                         </div>
                                     </div>
                                     <div class="item">
-                                        <span class="quote"><img src="img/quot.png" alt=""></span>
+                                        <span class="quote"><img src="/assets/img/quot.png" alt=""></span>
                                         <p id="testimonial_2">Hotel dapibus asue metus the nec feusiate eraten miss
                                             hendreri net ve ante the lemon sanleo nectan feugiat erat hendrerit necuis
                                             ve ante otel inilla duiman at finibus viverra neca the sene on satien the
                                             miss drana inc fermen norttito sit space, mus nellentesque habitan.</p>
                                         <div class="info">
-                                            <div class="author-img"><img src="img/team/1.jpg" alt=""></div>
+                                            <div class="author-img"><img src="/assets/img/team/1.jpg" alt=""></div>
                                             <div class="cont">
                                                 <span><i class="star-rating"></i><i class="star-rating"></i><i
                                                         class="star-rating"></i><i class="star-rating"></i><i
@@ -409,13 +412,13 @@
                                         </div>
                                     </div>
                                     <div class="item">
-                                        <span class="quote"><img src="img/quot.png" alt=""></span>
+                                        <span class="quote"><img src="/assets/img/quot.png" alt=""></span>
                                         <p id="testimonial_3">Hotel dapibus asue metus the nec feusiate eraten miss
                                             hendreri net ve ante the lemon sanleo nectan feugiat erat hendrerit necuis
                                             ve ante otel inilla duiman at finibus viverra neca the sene on satien the
                                             miss drana inc fermen norttito sit space, mus nellentesque habitan.</p>
                                         <div class="info">
-                                            <div class="author-img"><img src="img/team/5.jpg" alt=""></div>
+                                            <div class="author-img"><img src="/assets/img/team/5.jpg" alt=""></div>
                                             <div class="cont">
                                                 <span><i class="star-rating"></i><i class="star-rating"></i><i
                                                         class="star-rating"></i><i class="star-rating"></i><i
@@ -432,6 +435,79 @@
                 </div>
             </div>
         </section>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="footer-column footer-about">
+                                <h3 class="footer-title">A propos</h3>
+                                <p class="footer-about-text">Bienvenue !
+                                    Notre hôtel offre un cadre raffiné où chaque détail est pensé pour votre confort,
+                                    avec
+                                    des installations modernes et un service de premier ordre pour un séjour
+                                    exceptionnel.
+                                </p>
+
+                                <div class="footer-language">
+                                    <i class="lni ti-world"></i>
+                                    <select id="languageSelector" onchange="changeLanguage()">
+                                        <option value="fr">Français</option>
+                                        <option value="en">English</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 offset-md-1">
+                            <div class="footer-column footer-explore clearfix">
+                                <h3 class="footer-title">Explorez</h3>
+                                <ul class="footer-explore-list list-unstyled">
+                                    <li><a href="index.html">Acueil</a></li>
+                                    <li><a href="about.html">A propos</a></li>
+                                    <li><a href="rooms.html">Appartements</a></li>
+                                    <li><a href="restaurant.html">Restaurant</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="footer-column footer-contact">
+                                <h3 class="footer-title">Contact</h3>
+                                <p class="footer-contact-text">Hamdallaye ACI<br> Bamako Mali
+                                </p>
+                                <div class="footer-contact-info">
+                                    <p class="footer-contact-phone"><span class="flaticon-call"></span> +223 20 29 08 08
+                                        ACI</p>
+                                    <p class="footer-contact-phone"><span class="flaticon-call"></span> +223 20 28 38 80
+                                        Golf</p>
+                                    <p class="footer-contact-mail">contactreception@gmail.com</p>
+                                </div>
+                                <div class="footer-about-social-list">
+                                    <a href="#"><i class="ti-instagram"></i></a>
+                                    <a href="#"><i class="ti-facebook"></i></a>
+                                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i>
+                                        <!-- Icône LinkedIn --></a>
+                                    <a href="#" target="_blank"><i class="fab fa-tiktok"></i> <!-- Icône TikTok --></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="footer-bottom-inner">
+                                <p class="footer-bottom-copy-right">© Copyright 2024 Micasa, tous droits réservés</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </template>
 <script>

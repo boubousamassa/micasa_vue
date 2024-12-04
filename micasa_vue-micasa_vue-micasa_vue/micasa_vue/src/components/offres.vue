@@ -360,6 +360,80 @@
                 </div>
             </div>
         </section>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="footer-column footer-about">
+                                <h3 class="footer-title">A propos</h3>
+                                <p class="footer-about-text">Bienvenue !
+                                    Notre hôtel offre un cadre raffiné où chaque détail est pensé pour votre confort,
+                                    avec
+                                    des installations modernes et un service de premier ordre pour un séjour
+                                    exceptionnel.
+                                </p>
+
+                                <div class="footer-language">
+                                    <i class="lni ti-world"></i>
+                                    <select id="languageSelector" onchange="changeLanguage()">
+                                        <option value="fr">Français</option>
+                                        <option value="en">English</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 offset-md-1">
+                            <div class="footer-column footer-explore clearfix">
+                                <h3 class="footer-title">Explorez</h3>
+                                <ul class="footer-explore-list list-unstyled">
+                                    <li><a href="index.html">Acueil</a></li>
+                                    <li><a href="about.html">A propos</a></li>
+                                    <li><a href="rooms.html">Appartements</a></li>
+                                    <li><a href="restaurant.html">Restaurant</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="footer-column footer-contact">
+                                <h3 class="footer-title">Contact</h3>
+                                <p class="footer-contact-text">Hamdallaye ACI<br> Bamako Mali
+                                </p>
+                                <div class="footer-contact-info">
+                                    <p class="footer-contact-phone"><span class="flaticon-call"></span> +223 20 29 08 08
+                                        ACI</p>
+                                    <p class="footer-contact-phone"><span class="flaticon-call"></span> +223 20 28 38 80
+                                        Golf</p>
+                                    <p class="footer-contact-mail">contactreception@gmail.com</p>
+                                </div>
+                                <div class="footer-about-social-list">
+                                    <a href="#"><i class="ti-instagram"></i></a>
+                                    <a href="#"><i class="ti-facebook"></i></a>
+                                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i>
+                                        <!-- Icône LinkedIn --></a>
+                                    <a href="#" target="_blank"><i class="fab fa-tiktok"></i> <!-- Icône TikTok --></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="footer-bottom-inner">
+                                <p class="footer-bottom-copy-right">© Copyright 2024 Micasa, tous droits réservés
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </template>
 <script>
